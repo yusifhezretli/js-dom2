@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="todo-app">
+        <input type="text">
+        <button>Add</button>
+        <ul>
+            <li>Salam <i onclick="removetag(this)" class='bx bx-trash'></i></li>
+            <li>Necesen <i onclick="removetag(this)" class='bx bx-trash'></i></li>
+        </ul>
+    </div>
+
+    <div class="slider">
+
+        <div class="slides">
+            <img src="./2022-BMW-M4-CSL-G82.jpeg" class="slide" alt="">
+            <img src="images (1).jpeg" class="slide" alt="">
+            <img src="./982bc885bf2c8c5085ab646bbcd31a67.jpg" class="slide" alt="">
+            <img src="./a7ec6fd6a669f175ef4afaca40585238.jpg" class="slide" alt="">
+            <img src="./images.jpeg" class="slide" alt="">
+            <img src="./bmw-8149990_1280.jpg" class="slide" alt="">
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+        <div class="thumbnails">
+            <img src="./2022-BMW-M4-CSL-G82.jpeg" class="thumbnail" data-slide="0" alt="">
+            <img src="images (1).jpeg" class="thumbnail" data-slide="1" alt="">
+            <img src="./982bc885bf2c8c5085ab646bbcd31a67.jpg" class="thumbnail" data-slide="2" alt="">
+            <img src="./a7ec6fd6a669f175ef4afaca40585238.jpg" class="thumbnail" data-slide="3" alt="">
+            <img src="./images.jpeg" class="thumbnail" data-slide="4" alt="">
+            <img src="./bmw-8149990_1280.jpg" class="thumbnail" data-slide="5" alt="">
+        </div>
+    </div>
+
+    <section class="blog section " id="blog">
+
+        <div class="blog_cotainer conatiner">
+            <ul class="blog_filters">
+                <li data-filter="*" class="filter_active">All</li>
+                <li data-filter=".filter-smm">Marketing</li>
+                <li data-filter=".filter-seo">Seo</li>
+                <li data-filter=".filter-web">Web</li>
+            </ul>
+
+            <div class="blog_wrap-container">
+                <div class="blog_item filter-smm">
+                    <div class="blog_wrap">
+                        <img
+                            src="./images/ab-testi.jpg"
+                            class="img-fluid" alt>
+                        <div class="blog_info">
+                            <h4>Forest</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="blog_item filter-web">
+                    <div class="blog_wrap">
+                        <img
+                            src="./images/webb.jpg"
+                            class=" webb" alt>
+                        <div class="blog_info">
+                            <h4>Forest</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_item filter-seo">
+                    <div class="blog_wrap">
+                        <img
+                            src="./images/sem.jpg"
+                            class="img-fluid" alt>
+                        <div class="blog_info">
+                            <h4>Forest</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_item filter-smm">
+                    <div class="blog_wrap">
+                        <img
+                            src="./images/marka.jpg"
+                            class="img-fluid" alt>
+                        <div class="blog_info">
+                            <h4>Forest</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_item filter-smm">
+                    <div class="blog_wrap">
+                        <img
+                            src="./images/b2c.jpg"
+                            class="img-fluid" alt>
+                        <div class="blog_info">
+                            <h4>Forest</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="blog_item filter-smm">
+                    <div class="blog_wrap">
+                        <img
+                            src="./images/guerilla.jpeg"
+                            class="img-fluid" alt>
+                        <div class="blog_info">
+                            <h4>Forest</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="border" id="borders">
+        <div class="bar" id="bar"></div>
+    </div>
+    <div class="controls">
+        <button id="decrease">-</button>
+        <button id="increase">+</button> 
+    </div>
+    <div class="percentage" id="faiz">0%</div>
+
+
+
+    <div class="container">
+        <ul id="item-list">
+        
+        </ul>
+        <div class="pagination">
+            <button id="prev">&lt;</button>
+            <span id="page-numbers">
+       
+            </span>
+            <button id="next">&gt;</button>
+        </div>
+    </div>
+  
+    <script src="script.js"></script>
+</body>
+</html>
